@@ -12,7 +12,7 @@ connectDB();
 const app = express();
 const port = process.env.PORT || 3000;
 
-// Configurer CORS
+// Configurer CORS pour permettre les requêtes du frontend
 app.use(cors({
   origin: 'https://www.myminima.fr', // Remplacez par l'URL de votre frontend
   methods: 'GET,POST,PUT,DELETE',
