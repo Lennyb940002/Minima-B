@@ -14,9 +14,9 @@ const port = process.env.PORT || 3000;
 
 // Configurer CORS pour permettre les requêtes du frontend
 app.use(cors({
-  origin: '*', // Remplacez par l'URL de votre frontend
-  methods: 'GET,POST,PUT,DELETE',
-  allowedHeaders: 'Content-Type,Authorization'
+  origin: ['https://www.minimaapp.com', 'https://minimaapp.com'],
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
 }));
 
 // Middleware pour parser le JSON
